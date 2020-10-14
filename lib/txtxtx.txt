@@ -1,0 +1,9 @@
+bool res = await AuthProvider().loginWithGoogle();
+if (! res) print ("probleme de login avec google");
+
+
+Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                                  return myapp();
+                                }));
+
